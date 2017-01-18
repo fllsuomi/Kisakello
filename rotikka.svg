@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="323.47043"
+   height="114.98"
+   id="svg3106"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="rotikka.svg"
+   inkscape:export-filename="/var/www/html/fllsuomi/Kisakello/rotikka.png"
+   inkscape:export-xdpi="117.11612"
+   inkscape:export-ydpi="117.11612">
+  <defs
+     id="defs3108" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="173.05474"
+     inkscape:cy="28.231892"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1285"
+     inkscape:window-height="1009"
+     inkscape:window-x="77"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3111">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-16.527132,-168.25382)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3114"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:-0.01px;fill:#ffd42a;fill-opacity:1;stroke:none;font-family:COMPUTER Robot;-inkscape-font-specification:COMPUTER Robot"
+       transform="matrix(2.661176,0,0,2.661176,-929.82227,-389.96212)"><flowRegion
+         id="flowRegion3116"><rect
+           id="rect3118"
+           width="765.71429"
+           height="488.57144"
+           x="34.285713"
+           y="218.07646"
+           style="fill:#ffd42a" /></flowRegion><flowPara
+         id="flowPara3120"
+         style="text-align:center;line-height:77.99999714%;text-anchor:middle;fill:#ffd42a">Robotiikka- ja</flowPara><flowPara
+         id="flowPara3122"
+         style="text-align:center;line-height:77.99999714%;text-anchor:middle;fill:#ffd42a">tiedekasvatus ry</flowPara></flowRoot>    <flowRoot
+       transform="matrix(2.661176,0,0,2.661176,-932.81212,-391.96212)"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:-0.01000000000000000px;fill:#28c9ed;fill-opacity:1;stroke:none;font-family:COMPUTER Robot;-inkscape-font-specification:COMPUTER Robot"
+       id="flowRoot3147"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3149"><rect
+           y="218.07646"
+           x="34.285713"
+           height="488.57144"
+           width="765.71429"
+           id="rect3151"
+           style="fill:#28c9ed;fill-opacity:1" /></flowRegion><flowPara
+         style="text-align:center;line-height:77.99999714000000495%;text-anchor:middle;fill:#28c9ed;fill-opacity:1"
+         id="flowPara3153">Robotiikka- ja</flowPara><flowPara
+         style="text-align:center;line-height:77.99999714000000495%;text-anchor:middle;fill:#28c9ed;fill-opacity:1"
+         id="flowPara3155">tiedekasvatus ry</flowPara></flowRoot>    <text
+       sodipodi:linespacing="125%"
+       id="text3157"
+       y="277.61273"
+       x="82.424957"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:-0.01000000000000000px;fill:#28c9ed;fill-opacity:1;stroke:none;font-family:COMPUTER Robot;-inkscape-font-specification:COMPUTER Robot"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#28c9ed;font-family:Andale Mono;-inkscape-font-specification:Andale Mono;fill-opacity:1"
+         y="277.61273"
+         x="82.424957"
+         id="tspan3159"
+         sodipodi:role="line">www.fllsuomi.org</tspan></text>
+  </g>
+</svg>
