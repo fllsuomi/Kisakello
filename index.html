@@ -1,5 +1,11 @@
 <html>
 
+ <meta charset="UTF-8"> 
+
+
+ <link rel="stylesheet" href="skeleton.css">
+
+
 <style>
 
 @font-face {
@@ -18,167 +24,96 @@ body{
 
 
 
-#titles
-{
-	position: absolute;
-	width: 18em;
-	hhhheight: 50em;
-	width: 100%;
-	height: 100%;
-	bottom: 0;
-	left: 50%;
-	margin-left: -9em;
-	font-size: 350%;
-	font-weight: bold;
-	text-align: justify;
-	overflow: hidden;
-	transform-origin: 50% 100%;
-	transform: perspective(700px) rotateX(15deg);
-	z-index:100;
-	overflow: hidden;
+tr.rg td {
+    Ccolor: #1200ff;
+    color: yellow;
+    font-size: 22px;
 }
-#titles:after
-{
-	position: absolute;
-	content: ' ';
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 160%;
-	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	pointer-events: none;
-	overflow: hidden;
+tr.pr td {
+    color: #ff0a00;
+    font-size: 22px;
 }
-#titlecontent
-{
-	position: absolute;
-	top: 100%;
-	animation: scroll 70s linear 1s infinite;  //Duration: 20s?
-	z-index:100;
-	color: yellow; 
-	background-color:black; 
-	overflow: hidden;
-
-}
-
-@keyframes scroll {
-	0% { top: 90%; }
-	100% { top: -870%; }  //870 kertoo pituuden. Ihan passeli perjantaille.
+tr.en td {
+    color: #1a0f00;
+    font-size: 22px;
 }
 
 
+tr{font-size: 25px}
 
-
-
-
-#timer, #next{
-	top: 40%;
-	font-size: 250px; 
-	font-family: "Courier New";
-	font-family: "Instruction";
-	font-family: "telegrama";
-	text-align: center; 
-	height:100%;
-	width:100%;
-	border: 2px solid white; 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	text-shadow: 1px 1px 1px #000, 3px 3px 5px yellow; 
-
-	background-color:black; 
-	color: white; 
-	z-index: 0;
-	visibility: hidden;
+.rg{
+  color: red;
+  font-size: 42px;
 }
 
-#left, #right{
-	position: relative;
-	font-size: 100px;
-	top: 100px;
-	width: 46%;
-	height: 70%;
-	margin: 12px; 
-	background-color: blue;
-	border: 2px solid; 
-	overflow: hidden;
-}
-#left{
-	float: left;
-}
-#right{
-	float: left;
-}
-#ala{
-	clear: both;
-	width: 80%;
-}
-.proc{
-	font-size: 50px; 
-	font-family: "Courier New";
-	color: black; 
-	}
+
+.alignleft{  text-align: left; }
+.alignright{ text-align: right; }
+
+tr.alignright td { text-align: right;}
+tr.alignleft td { text-align: left;}
 
 
-#FLLlogo{
-	position: absolute; 
-	top: 40px;
-	left: 40px;
+#timer{
+  color: white;
+  font-size: 389px;
+  text-align: center;
+  width:100%;
+  visibility: hidden;
 }
+
+
+#container{
+    border: 4px solid white;
+    padding: 10px;
+   Height: 98%;
+}
+
+
+#Schedule{}
+.tables{
+   border: 2px solid white;
+   padding: 10px;
+   height: 60vh;
+   background-color: cyan;
+   background-color: #7ddff3ff;
+   Hheight: 1200px;
+}
+
+
+#ylapalkki{
+  background-color: black;
+}
+
 
 #kello{
-	position: absolute; 
-	top: 20px;
-	right: 40px;
-	
-	font-size: 35px; 
-	font-family: "Courier New";
-	font-family: "Instruction";
-	font-family: "telegrama";
-	text-align: center; 
-	
-	background-color:black; 
-	color: white; 
-	
-	-moz-animation: mymove 3s ease infinite;
-    -webkit-animation: mymove 3s ease infinite;	
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    line-height: 100%;
+    font-size: 150px; 
+    font-family: "Courier New";
+    font-family: "Instruction";
+    font-family: "Telegrama";
+    text-align: center; 
+
+    background-color:black; 
+    color: white; 
+
+    -moz-animation: mymove 3s ease infinite;
+    -webkit-animation: mymove 3s ease infinite; 
 }
 @-webkit-keyframes mymove {
     0% {opacity: 1.0;}
-	50% {    opacity: 0.4;}
-	100% { opacity: 1.0;}	
+    50% {opacity: 0.4;}
+    100% { opacity: 1.0;}   
 }
-
 @-moz-keyframes mymove {
-    0% {        opacity: 1.0;}
-    50% {        opacity: 0.4;}
-    100% {        opacity: 1.0;};
+    0% {opacity: 1.0;}
+    50% {opacity: 0.4;}
+    100% {opacity: 1.0;};
 }
-
-img{
-	width:30%;
-}
-
-
-
-table, th, td {
-   border: 1px solid black;
-}
-
-table{
-	width:100%
-}
-th{
-	height: 50px;
-}
-th, td {
-    padding: 15px;
-    text-align: left;
-    color: yellow; 
-font-size: 40px;
-}
-
 
 
 
@@ -187,379 +122,326 @@ font-size: 40px;
 
 <head>
     <script src="jquery-2.2.3.min.js"></script>
-    <script>2
+
+    <!--    <script src="jquery-csv.min.js"></script> -->
+    <script src="jquery-csv.js"></script>
+
+    <script>
     $( document ).ready(function() {
 
-		function joukkue(name, arrival, opening, fllteaminfo, engineering, projectCore, pr1, pr2, pr3, lunch, rg1, rg2 ){
-		this.name = name;
-		this.arrival = arrival;
-		this.opening = opening;
-		this.fllteaminfo = fllteaminfo;
-		this.engineering = engineering; //Table
-		this.projectCore = projectCore;
-		this.pr1= pr1; //Table
-		this.pr2=pr2; //Table
-		this.pr3=pr3; //Table
-		this.lunch=lunch;
-		this.rg1=rg1; //Table
-		this.rg2=rg2; //Table		
-	};
- 
-	function atTable(name, time, proc){
-		
-		if (typeof time !== 'undefined'){
-			if (time.length == 4){  //Lisätään alkuun 0, jos esim 9:20 -> 09:20
-				time = '0'+time;
-			}
-			this.name = name;
-			this.time = time;
-			this.proc = proc;
 
-		}
-		//console.log( this ); 
-	}
- 
-	function compareStrings(a,b) {
-		return a.name.localeCompare(b.name);
-	}
- 	function compareTimes(a,b) {
-		if (typeof a.time !== 'undefined' && b.time !== 'undefined' ) {
-			return a.time.localeCompare(b.time);
-		}
-		
-	}
- 
-	function timetable( jj ){
-			tt=[];
+            $(window).resize(function () {
+                var height = $('#rotikka').height();
+                $('#kello').css({
+                    'font-size': 0.9*(height) + 'px',
+                    'line-height': height + 'px'
+                    })
+                }).trigger('resize');
+
+
+            var $data;
+
+            $.ajax({
+url: "Ulvila19CroppedTh.csv",
+//url: "Ulvila19CroppedFr.csv",
+success: function (csvd) {
+data = $.csv.toObjects(csvd);
+             //console.log( data );
+             createTableTimes( data );
+          },
+          dataType: "text",
+          complete: function () {
+          // call a function on complete 
+          }
+     });
+
+
+
+     function createTableTimes(data){
+       //console.log("HHHHHHH");
+
+       //console.log( data );
+
+       //var tables = {};
+       var tables = {'A':[], 'B':[], 'C':[], 'D':[], 'E':[], 'F':[]};
+       var keys = Object.keys( data[0] );
+       //console.log( keys );
+
+       // for (var prop in data[0] ){
+       //     if ( "T".localeCompare(prop.slice(-1)) == 0){
+       //         tables[ data[0][prop] ] = [];
+       //     }
+       // }
+        //console.log( tables );
+
+       for (var i =0; i < data.length; i++){
+                           
+        for (var prop in data[i] ){
+            if ( "T".localeCompare(prop.slice(-1)) == 0){
+
+                //
+                // Check if Rg, Pr, En 
+                //
+                if ( prop.includes('Rg') ){
+                  var rg = prop.replace(/Rg/, 'RobotgameRound').slice(0,-1);
+                  var aika = data[i][rg];
+                  var item = "Erä" + prop.slice(-2, -1);
+                }else if ( prop.includes('Pr') ){
+                  var pr = prop.replace(/Pr/, 'Practice').slice(0,-1);
+                  var aika = data[i][pr];
+                  var item ="Harkka" + prop.slice(-2, -1);
+                } else if ( prop.includes('En') ){
+                  var pr = prop.replace(/En/, 'Engineering').slice(0,-1);
+                  var aika = data[i][pr];
+                  var item ="Arviointi";// + prop.slice(-2, -1);
+                }
+                var table = data[i][prop];
+
+                var rivi = { 'Name':data[i]["Name"],  
+                             'Time':aika,
+                             'Item': item};
+
+                //tables[ data[i][prop] ].push(prop);
+                tables[ data[i][prop] ].push(rivi);
+
+                //console.log('AAA' + data[i]["Name"] + " " + aika + " " + item);
+
+            }else{}
+        }
+       }
+
+       // Sort the tables
+       for (var prop in tables){
+          //console.log( prop );
+          //console.log( tables[prop] );
+
+          tables[prop].sort(function(a,b){
+                  return ( getMinutes(a)-getMinutes(b) );
+          });
+       }
+
+       //console.log( tables.A );
 			
-			for (var i = 0; i < jj.length; i++) {
-				//console.log( jj[i] );
-				var name = jj[i].name;
-
-				//Collect times at table;
-				var time = jj[i].engineering;
-				At = new atTable( name, time, "Engineering");
-				tt.push( At );
-
-				var time = jj[i].pr1;
-				At = new atTable( name, time, "Practise 1");
-				tt.push( At );
-
-				var time = jj[i].pr2;
-				At = new atTable( name, time, "Practise 2");
-				tt.push( At );
-
-				var time = jj[i].pr3;
-				At = new atTable( name, time, "Practise 3");
-				tt.push( At );
-				
-				var time = jj[i].rg1;
-				At = new atTable( name, time, "Robot Game 1");
-				tt.push( At );
-
-				var time = jj[i].rg2;
-				At = new atTable( name, time, "Robot Game 2");
-				if (typeof At.time !== 'undefined'){
-					tt.push( At );
-				}
-				
-			}
-
-			//Sort according to times:
-			tt.sort( compareTimes );
-			
-			//console.log( tt  ); 
-			
-			//
-			// Append to table
-			//
-			for (var i = 0; i < tt.length; i++) {
-				//console.log( tt[i] ); 
-				var str1 = "<td>" + tt[i].time  +  "</td>";
-				var str2 = "<td>" + tt[i].name  +  "</td>";
-				var str3 = "<td>" + tt[i].proc  +  "</td>";
-
-				//console.log( str1 + str2 + str3 ); 
-				var color = "#FF0000";
-				if (tt[i].proc.charAt(0) == "P"){
-					color="#AA0044";
-				}else if (tt[i].proc.charAt(0) == "R"){
-					color="#088A08";
-				}
-				
-				$("#timetable tr:last").after( "<tr bgcolor=" + color + ">" + str1+ str2 + str3 + "</tr>" );
-			}
-			
-			return tt;
-		
-	}
- 
- 
- var jj = [];
-
- var j = new joukkue('Viikki1','8:00','8:30','9:05','10:20','12:00','9:20','12:40','14:40','11:00','13:40');
-	jj.push( j ); 
- var j = new joukkue('Espoo','8:00','8:30','9:05','11:20','9:20','10:40','12:40','14:40','11:40','13:50');
-	jj.push( j ); 
- var j = new joukkue('A Stereoidit','8:00','8:30','9:05','12:00','9:45','10:40','12:20','15:00','11:10','13:50');
-	jj.push( j ); 
- var j = new joukkue('KG Klemm','8:00','8:30','9:05','9:20','10:10','11:00','12:20','15:00','11:30','13:40','14:00');
-	jj.push( j ); 
- var j = new joukkue('Kokkuhoiukamp','8:00','8:30','9:05','9:40','12:25','10:20','11:40','15:20','10:50','14:20');
-	jj.push( j ); 
- var j = new joukkue('Viikki2','8:00','8:30','9:05','10:00','10:35','11:20','11:20','15:20','11:40','14:10');
-	jj.push( j ); 
- var j = new joukkue('Vinni Beoeeslid','8:00','8:30','9:05','11:00','15:05','9:40','13:10','15:40','11:30','14:10');
-	jj.push( j ); 
- var j = new joukkue('Aseman Majavat','8:00','8:30','9:05','11:40','14:40','10:00','12:00','15:40','10:50','14:00');
-	jj.push( j ); 
- 
-	//console.log( jj ); 
-
-	tt = new timetable( jj );
-	
-	ttNext = tt;
-	
-	kaynnistaKello();
-	
-	var tila = 0;
-
-	$(document).keypress(function(event) {
-
-
-		
-
-		//alert('Handler for .keypress() called. - ' + event.charCode);
-		if (event.charCode == 32 && tila != "timer"){  //Välilyönti SPACE
-			$("#timer").css("display", "block");
-			$("#timer").css("visibility", "visible");
-			$("#timer").css("zIndex",100);
-			
-			$("#titlecontent").hide();		
-			$("#titlecontent").css("zIndex", 0);
-		
-			$("#kello").hide();		
-
-			tila = "timer";
-			timer( );
-		}
-
-
-		if (event.charCode == 116 && tila != "timer"){   //
-
-			$("#next").css("display", "none");
-			$("#next").css("zIndex",1);
-
-		
-			$("#titlecontent").show();		
-			$("#titlecontent").css("zIndex", 100);
-
-
-			$("#timer").css("visibility", "hidden");
-			$("#timer").css("zIndex",1);
-
-		}
-
-		if (event.charCode == 110 && tila != "timer"){   // n/N: Seuraava
-
-			//$("#titlecontent").show();		
-			//$("#titlecontent").css("zIndex", 100);
-
-			//Hide others
-			$("#timer").css("display", "none");
-			$("#timer").css("zIndex",1);
-
-			$("#titlecontent").hide();		
-			$("#titlecontent").css("zIndex", 0);
-
-			$("#next").css("display", "inline-block");
-			$("#next").css("visibility", "visible");
-			$("#next").css("zIndex",100);
-
-			//
-			// Check the time.
-			//
-			
-			//Current time
-			var d = new Date(),
-					minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-					hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours();
-		
-			var time = hours + ":" + minutes;
-			
-			time = "13:00";
-			console.log( time ); 
-			console.log( ttNext[0].time );
-			//console.log( Date.parse('01/01/2011 10:20:45') > Date.parse('01/01/2011 5:10:10') )
-
-			var ok=0;
-			while ( !ok ){
-				if ( Date.parse('01/01/2011 ' + time) < Date.parse('01/01/2011 ' + ttNext[0].time ) ){
-					$("#left").html( NextHTLM( ttNext ) );			
-					ttNext.shift();
-					$("#right").html( NextHTLM( ttNext ) );
-					ttNext.shift();
-					console.log("JEE");
-					ok = 1;
-				}else{
-					ttNext.shift();
-					ttNext.shift();
-					console.log("HAA");
-				}
-			}
-			//Show
-		}
-		
-		
-		
-		
-		
-	});
-	
-	function NextHTLM( ttNext ){
-		return ttNext[0].name + 
-			"<div class='proc'>" + ttNext[0].proc+"</div>"+
-			"<div class='proc'>" + ttNext[0].time+"</div>";
-	}
-	
-
-	function kaynnistaKello(){
-		var d = new Date(),
-					minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-					hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours();
-		
-				$("#kello").html( hours +":"+minutes );
-		
-		var kelloID = setInterval( function(){
-
-				var d = new Date(),
-					minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-					hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours();
-		
-				$("#kello").html( hours +":"+minutes );
-	
-		},30000  );
-	
-	
-	}
-	
-	function Aaah(){
-		//Callback function
-		tila = 0; 
-		$("#timer").html( "0:00.0" );
-	}
+       //
+	   // Append to table
+	   //
+       var lkmMax = 6;
+       var istart = 0;
+       var a = {'Time': $('#kello').text() };
 
 
+       for (var prop in tables ){
 
+           //Get the starting index 
+           for (var i = 0; i < tables[prop].length; i++) {
+               if ( getMinutes( tables[prop][i] ) >= getMinutes(a) ){
+                   istart = i;
+                   if ( istart == 0){
+                   }else {
+                       istart = istart -1
+                   }
+                   break;
+               }
+           }
 
-	function MSS( n ){
-	//Sisääntulo 13456 eli 132 sek 56 ss 
-	//Ulostulo  2:12.6
+           for (var i = istart; i < Math.min(istart + lkmMax, tables[prop].length); i++) {
+               var strS;
 
-		var mins = Math.floor( n/60/1000  );
-		var secs = Math.floor( n/1000-mins*60 );	
-		var sssecs = Math.floor( ( n/1000 - mins*60 - secs)*10 );
+               var str1 = "<td>" + tables[prop][i].Time + "</td>";
+               var str2 = "<td>" + tables[prop][i].Item + "</td>";
+               var str3 = "<td>" + tables[prop][i].Name + "</td>";
 
-		if (mins < 1){mins = "0";}
-		if (secs <10){secs = "0" + secs;}
+               if ( "A".localeCompare(prop)==0 || "C".localeCompare(prop)==0){
+                   strS = "<tr class='alignleft'>" + str1 + str2 + str3 + "</tr>";
+               }else{
+                   strS = "<tr class='alignright'>" + str3 + str2 + str1 + "</tr>";
+               }
+               $("#timetable"+ prop + " tr:last").after(  strS );
+           }
+       }
 
+     }
 
-		return mins + ':' + secs + '.' + sssecs;
-	}
 
 
+function getMinutes(a){
+    var ax = a["Time"].indexOf(":") ;
+    var ah = a["Time"].substring(0, ax) ; 
+    var am = a["Time"].substring(ax+1 );
 
-	function timer(){
+    return ah*60+am;
+}
 
-		var alkuaika = new Date().getTime();
-		var erankesto = 150*1000;  //sekuntia 
-		//var erankesto = 5*1000;  //sekuntia 
-		
-		//window.setInterval( function(){
-		var timerID = setInterval( function(){
+kaynnistaKello();
 
-				var aika = new Date().getTime() - alkuaika;
 
-				kulunut = erankesto - aika;
+$(document).keypress(function(event) {
 
 
-			//	//ÄÄnet
-			//	if ( aika < 1 ){
-			//	var audio = new Audio('audio_file.mp3');
-			//	audio.play();
-			//	}
+        //alert('Handler for .keypress() called. - ' + event.charCode);
+        if ( event.charCode == 32 ){  //Välilyönti SPACE
+        $("#timer").css("display", "block");
+        $("#timer").css("visibility", "visible");
+        $("#timer").css("zIndex",100);
 
-				var dd1 = MSS( kulunut );  
+        $("#schedule").hide();		
+        $("#schedule").css("zIndex", 0);
 
-				//console.log( kulunut ); 
+        $("#kello").hide();		
 
-				if ( kulunut > 0 ){
-					$("#timer").html( dd1 );
-				}else{
-					clearInterval( timerID ); 
-					Aaah();
-					return 1;
-				}
-	
-		},100  );
+        timer( );
+        }
 
-	}
+        });
 
-    });
 
-</script>
-</head>
-<body>
 
+function kaynnistaKello(){
+    var d = new Date(),
+        minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+        hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours();
 
+    //Change:
+    //hours = hours + 14;
 
+    $("#kello").html( hours +":"+minutes );
 
-<script>
- $( document ).ready(function() {
- 
+    var kelloID = setInterval( function(){
+            var d = new Date(),
+            minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+            hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours();
 
-	
-	
-	});
-</script>
+            $("#kello").html( hours +":"+minutes );
 
-<div id="timer">
-2:30.0
-</div> 
+            },30000  );
 
 
-<div id="next">
-<div id="left">Vasen</div>
-<div id="right">Oikea</div>
-</div>
+}
 
 
 
 
 
-<div id="FLLlogo">
-<img src="FIRSTLego_iconHorz_RGB.png"></img>
-</div>
-
-<div id="kello">
-<p>20:56</p>
-</div>
-
-
-<div id="titles"><div id="titlecontent">
-	<h2>Friday &mdash; Table</h2>
-	<table id="timetable">
-	<tbody>
-	<tr></tr>
-	</tbody>
-	</table>
-
-</div></div>
-
-
-
-</body>
-</html>
+function MSS( n ){
+    //Sisääntulo 13456 eli 132 sek 56 ss 
+    //Ulostulo  2:12.6
+    var mins = Math.floor( n/60/1000  );
+    var secs = Math.floor( n/1000-mins*60 );	
+    var sssecs = Math.floor( ( n/1000 - mins*60 - secs)*10 );
+
+    if (mins < 1){mins = "0";}
+    if (secs <10){secs = "0" + secs;}
+
+    return mins + ':' + secs + '.' + sssecs;
+}
+
+
+function timer(){
+    var alkuaika = new Date().getTime();
+    var erankesto = 150*1000;  //sekuntia 
+    //var erankesto = 5*1000;  //sekuntia 
+
+    //window.setInterval( function(){
+    var timerID = setInterval( function(){
+            var aika = new Date().getTime() - alkuaika;
+            var kulunut = erankesto - aika;
+
+            var dd1 = MSS( kulunut );  
+
+            //console.log( kulunut ); 
+
+            if ( kulunut > 0 ){
+            $("#timer").html( dd1 );
+            }else{
+            clearInterval( timerID ); 
+            $("#timer").html( "0:00.0" );
+            return 1;
+            }
+
+            },100  );
+
+}
+
+});
+
+    </script>
+    </head>
+    <body>
+
+
+
+    <div id=container>
+
+
+        <div id="ylapalkki">
+            <div class="row">
+                <div class="four columns">
+                    <img class="u-full-width" src="FIRSTLego_iconHorz_RGB.png"></img>
+                </div>
+                <div class="four columns">
+                    <div id="rotikka"><img class="u-full-width" src="rotikka.png"></img></div>
+                </div>
+                <div class="four columns">
+                    <div id="kello"> <p>20:56</p> </div>
+                </div>
+            </div>
+        </div>
+        <div id="schedule">
+            <div class="row">
+                <div class="six columns">
+                    <div class="tables">
+                        <h2>Pelipöydät A ja B</h2>
+                        <div class="row">
+                            <div class="six columns">
+                                <table class="u-full-width" id="timetableA">
+                                    <tbody>
+                                    <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="six columns">
+                                <table class="u-full-width" id="timetableB">
+                                    <tbody>
+                                    <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <div class="tables">
+                        <h2>Pelipöydät C ja D</h2>
+                        <div class="row">
+                            <div class="six columns">
+                                <table class="u-full-width" id="timetableC">
+                                    <tbody>
+                                    <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="six columns">
+                                <table class="u-full-width" id="timetableD">
+                                    <tbody>
+                                    <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <div id="timer">
+                2:30.0
+            </div> 
+
+        </div>
+
+        </body>
+        </html>
 
 
 
